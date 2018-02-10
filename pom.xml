@@ -158,5 +158,11 @@
 			<version>3.10.5.3</version>
 			<type>pom</type>
 		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20171018</version>
+			<type>bundle</type>
+		</dependency>
 	</dependencies>
 </project>
