@@ -63,19 +63,19 @@
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
-					<!--  <outputDirectory>${project.build.directory}/azure-functions/${functionAppName}</outputDirectory> -->
+					<!-- <outputDirectory>${project.build.directory}/azure-functions/${functionAppName}</outputDirectory> -->
 					<outputDirectory>${project.build.directory}</outputDirectory>
 					<appendAssemblyId>true</appendAssemblyId>
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
-					
+
 					<archive>
-					  <manifest>
-						<mainClass>myapps.ModelTest</mainClass>
-					  </manifest>
+						<manifest>
+							<mainClass>myapps.ModelTest</mainClass>
+						</manifest>
 					</archive>
-					
+
 				</configuration>
 				<executions>
 					<execution>
@@ -87,7 +87,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 			<!--This is the new spotify plugin -->
 			<plugin>
 				<groupId>com.spotify</groupId>
@@ -113,7 +113,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 		</plugins>
 
 		<pluginManagement>
@@ -182,6 +182,7 @@
 			<artifactId>kafka-streams</artifactId>
 			<version>${kafka.version}</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/ai.h2o/h2o-genmodel -->
 		<dependency>
 			<groupId>ai.h2o</groupId>
@@ -196,5 +197,12 @@
 			<artifactId>json</artifactId>
 			<version>20171018</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.25</version>
+		</dependency>
+
 	</dependencies>
 </project>
