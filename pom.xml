@@ -90,8 +90,8 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
 					<!--  <outputDirectory>${project.build.directory}/azure-functions/${functionAppName}</outputDirectory> -->
-					<outputDirectory>${project.build.directory}/target/fat_jar</outputDirectory>
-					<appendAssemblyId>false</appendAssemblyId>
+					<outputDirectory>${project.build.directory}</outputDirectory>
+					<appendAssemblyId>true</appendAssemblyId>
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
