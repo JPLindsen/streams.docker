@@ -36,10 +36,13 @@ public class ModelTest {
         //EasyPredictModelWrapper model = new EasyPredictModelWrapper(glmModel);
 		
 		// Configure Kafka Streams Application
-        Properties props = new Properties();
+		final String bootstrapServers = args.length > 0 ? args[0] : "localhost:9092";
+		final Properties props = new Properties();
         props.put(StreamsConfig.APPLICATION_ID_CONFIG, "streams-modeltest");
         //props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-        props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "http://35.229.78.130:9092");
+        //props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "http://35.229.78.130:9092");
+        props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+        
         props.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
         props.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass());
 		
