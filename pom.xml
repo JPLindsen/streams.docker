@@ -152,17 +152,19 @@
 			<artifactId>kafka-streams</artifactId>
 			<version>${kafka.version}</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/ai.h2o/h2o-genmodel -->
 		<dependency>
 			<groupId>ai.h2o</groupId>
 			<artifactId>h2o-genmodel</artifactId>
+			<!--<version>3.14.0.1</version> -->
 			<version>3.10.5.3</version>
-			<type>pom</type>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>20171018</version>
-			<type>bundle</type>
 		</dependency>
 	</dependencies>
 </project>
