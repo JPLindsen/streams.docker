@@ -40,6 +40,7 @@ public class ModelTest {
 		final Properties props = new Properties();
         props.put(StreamsConfig.APPLICATION_ID_CONFIG, "streams-modeltest");
         //props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        
         props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "http://35.229.78.130:9092");
         //props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         
